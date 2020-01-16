@@ -1,0 +1,470 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+}
+
+.main__right {
+  width: 83%;
+}
+@media screen and (max-width: 600px) {
+  .main__right {
+    width: 100%;
+  }
+}
+
+.company-info {
+  display: flex;
+  padding: 55px 4% 85px;
+}
+@media screen and (max-width: 1000px) {
+  .company-info {
+    flex-direction: column;
+  }
+}
+
+header {
+  display: flex;
+  height: 53px;
+  background-color: #000;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+}
+
+#ham {
+  height: 20px;
+  width: 30px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  #ham {
+    display: block;
+  }
+  #ham span {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    transition: all 0.7s 0s ease;
+  }
+  #ham span:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main__left {
+  height: 100%;
+  width: 17%;
+  min-width: 200px;
+}
+@media screen and (max-width: 600px) {
+  .main__left {
+    display: none;
+  }
+}
+
+.menu-nav {
+  height: 75rem;
+  box-shadow: 2px 0px 3px #00000029;
+}
+.menu-nav ul li {
+  padding-left: 3.8rem;
+  height: 57px;
+  line-height: 57px;
+  transition: all 0.5s;
+}
+.menu-nav ul li:hover {
+  color: #fff;
+  background-color: #000;
+}
+.menu-nav ul li a {
+  display: inline-block;
+  width: 100%;
+}
+.menu-nav ul li a i {
+  margin-left: 100px;
+}
+
+#company-image {
+  display: flex;
+}
+@media screen and (max-width: 959px) {
+  #company-image {
+    flex-direction: column;
+  }
+}
+
+.img__main {
+  height: 426px;
+  width: 60%;
+  background-image: url("../img/top1.png");
+  background-size: cover;
+  position: relative;
+}
+@media screen and (max-width: 959px) {
+  .img__main {
+    width: 100%;
+    background-position: 50% 0;
+  }
+}
+.img__main__new {
+  width: 14%;
+  min-width: 90px;
+  background-color: #8E0000;
+  font-size: 18px;
+  padding: 7px 25px;
+  color: #fff;
+  position: absolute;
+  top: 17px;
+  right: 23px;
+  text-align: center;
+}
+.img__main__desc {
+  height: 132px;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding-top: 6%;
+  padding-left: 7%;
+  font-size: 20px;
+}
+@media screen and (max-width: 959px) {
+  .img__main__desc {
+    font-size: 16px;
+  }
+}
+
+.image-wrap__sub {
+  width: 40%;
+}
+@media screen and (max-width: 959px) {
+  .image-wrap__sub {
+    width: 100%;
+  }
+}
+
+.img__sub1 {
+  height: 213px;
+  background-image: url("../img/top2.png");
+  background-size: cover;
+  position: relative;
+}
+.img__sub1__desc {
+  height: 90px;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding-top: 6%;
+  padding-left: 7%;
+}
+
+.img__sub2 {
+  height: 213px;
+  background-image: url("../img/top3.png");
+  background-size: cover;
+  position: relative;
+}
+.img__sub2__desc {
+  height: 90px;
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding-top: 6%;
+  padding-left: 7%;
+}
+
+.img-desc-wrap {
+  width: 80%;
+}
+.img-desc-wrap p {
+  color: #fff;
+}
+
+#active-wrap {
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+#active-wrap ul {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 65%);
+  width: 50%;
+}
+#active-wrap ul li {
+  height: 57px;
+  padding-left: 3.8rem;
+  line-height: 57px;
+  background-color: #fff;
+  transition: all 0.5s 0s ease;
+}
+#active-wrap ul li:hover {
+  color: #fff;
+  background-color: #000;
+}
+#active-wrap ul li a {
+  display: inline-block;
+  width: 100%;
+}
+#active-wrap ul li a i {
+  margin-left: 100px;
+}
+
+#company-news {
+  width: 62%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1000px) {
+  #company-news {
+    width: 100%;
+  }
+}
+
+.news-item {
+  width: 47%;
+  box-shadow: 1px 1px 6px #00000029;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 500px) {
+  .news-item {
+    width: 100%;
+  }
+}
+.news-item:nth-child(5), .news-item:nth-child(6) {
+  margin-bottom: 0;
+}
+.news-item__img {
+  overflow: hidden;
+}
+.news-item__img img {
+  width: 100%;
+}
+
+.news-item-wrap {
+  padding: 20px;
+}
+.news-item-wrap__title {
+  font-weight: bold;
+}
+.news-item-wrap__title:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #E6E6E6;
+  margin: 23px 0;
+}
+
+#info-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38%;
+  margin-left: 30px;
+}
+@media screen and (max-width: 1000px) {
+  #info-category {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+
+.category-title {
+  font-size: 21px;
+}
+.category-title:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #707070;
+  margin: 20px 0 33px;
+}
+
+.category-item {
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #F0F0F0;
+  margin-bottom: 30px;
+}
+.category-item__img {
+  height: 100%;
+}
+.category-item__img img {
+  height: 100%;
+}
+
+.advertise {
+  width: 100%;
+  position: relative;
+}
+.advertise img {
+  width: 100%;
+}
+.advertise p {
+  height: 38px;
+  line-height: 38px;
+  width: 100%;
+  color: #fff;
+  background-color: #222222;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+footer {
+  height: 50px;
+  background-color: #222222;
+}
+
+small {
+  text-align: center;
+}
+small p {
+  line-height: 50px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

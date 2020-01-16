@@ -1,0 +1,63 @@
+/////////////////////
+//       変数      //
+/////////////////////
+$black: #000;
+$white: #fff;
+
+/////////////////////
+//      mixin      //
+/////////////////////
+
+@mixin pc {
+    @media screen and (min-width: 960px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: 959px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (max-width: 600px) {
+        @content;
+    }
+}
+
+/////////////////////
+//      共通       //
+/////////////////////
+html {
+    font-size: 62.5%; //10px
+}
+
+body {
+    font-size: 14px;
+}
+
+/////////////////////
+//      main       //
+/////////////////////
+main {
+    display: flex;
+}
+
+.main__right {
+    width: 83%;
+    @include sp {
+        width: 100%;
+    }
+}
+
+/////////////////////
+//     company     //
+/////////////////////
+.company-info {
+    display: flex;
+    padding: 55px 4% 85px;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+    }
+}

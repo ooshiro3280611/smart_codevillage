@@ -1,0 +1,33 @@
+.main__left {
+    height: 100%;
+    width: 17%;
+    min-width: 200px;
+    @include sp {
+        display: none;
+    }
+}
+
+.menu-nav {
+    height: 75rem;
+    box-shadow: 2px 0px 3px #00000029;
+    ul {
+        li {
+            padding-left: 3.8rem;
+            height: 57px;
+            line-height: 57px;
+            transition: all 0.5s;
+            &:hover {
+                color: $white;
+                background-color: $black;
+            }
+            a {
+                display: inline-block;
+                width: 100%;
+                i {
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+}
+

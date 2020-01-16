@@ -1,0 +1,87 @@
+#company-image {
+    display: flex;
+    @include tab {
+        flex-direction: column;
+    }
+}
+
+.img__main {
+    height: 426px;
+    width: 60%;
+    background-image: url("../img/top1.png");
+    background-size: cover;
+    position: relative;
+    @include tab {
+        width: 100%;
+        background-position: 50% 0;
+    }
+    &__new {
+        width: 14%;
+        min-width: 90px;
+        background-color: #8E0000;
+        font-size: 18px;
+        padding: 7px 25px;
+        color: $white;
+        position: absolute;
+        top: 17px;
+        right: 23px;
+        text-align: center;
+    }
+    &__desc {
+        height: 132px;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba($black,0.46);
+        padding-top: 6%;
+        padding-left: 7%;
+        font-size: 20px;
+        @include tab {
+            font-size: 16px;
+        }
+    }
+}
+
+.image-wrap__sub {
+    width: 40%;
+    @include tab {
+        width: 100%;
+    }
+}
+
+.img__sub1 {
+    height: 213px;
+    background-image: url("../img/top2.png");
+    background-size: cover;
+    position: relative;
+    &__desc {
+        height: 90px;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba($black,0.46);
+        padding-top: 6%;
+        padding-left: 7%;
+    }
+}
+
+.img__sub2 {
+    height: 213px;
+    background-image: url("../img/top3.png");
+    background-size: cover;
+    position: relative;
+    &__desc {
+        height: 90px;
+        position: absolute;
+        bottom: 0%;
+        background-color: rgba($black,0.46);
+        padding-top: 6%;
+        padding-left: 7%;
+    }
+}
+
+
+.img-desc-wrap {
+    width: 80%;
+    p {
+        color: $white;
+    }
+}
